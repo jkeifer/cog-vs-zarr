@@ -1,0 +1,16 @@
+folium
+fsspec
+griffine
+jupyterlab
+kerchunk
+numpy
+numcodecs
+odc-geo
+planetary-computer[adlfs]
+pyproj
+pystac-client
+rioxarray
+shapely
+tifffile
+xarray
+zarr
