@@ -81,33 +81,29 @@ This approach is not recommended as it is more subject to local environment
 differences than the docker-based approaches. But it does have the benefit of
 not requiring docker as a dependency.
 
-Note that the instructions below were written with a MacOS/Linux environment in
-mind. Windows users will likely need to leverage something like [git for
-Windows](https://gitforwindows.org/) and the included Git BASH tool to follow
-along (WSL is also likely a viable solution to get a Linux environment on a
-Windows machine).
+> [!NOTE]
+> The instructions below were written with a MacOS/Linux environment in mind.
+> Windows users will likely need to leverage something like [git for
+> Windows](https://gitforwindows.org/) and the included Git BASH tool to follow
+> along (WSL is also likely a viable solution to get a Linux environment on a
+> Windows machine).
 
-To get started, clone this repository and set up a python venv. Python >=3.12
-is recommended:
+> [!IMPORTANT]
+> `libgdal` is a binary dependency required to proceed.  MacOS users will want
+> to use something like brew, conda, or another solution to get this dependency
+> installed. Debian-based Linux users should be able to `apt-get install
+> libgdal-dev` or an equivalent. Users on other distributions or operating
+> systems will need to work out the prefered method for installing this
+> dependency.
+
+To run jupyter lab with the various required dependencies, it is recommended to
+use `uv`. `uv` can be installed via pip or the system package manager. With
+`uv` installed, one can simply:
 
 ```commandline
 git clone https://github.com/jkeifer/cog-vs-zarr.git
 cd cog-vs-zarr
-python -m venv .venv
-source .venv/bin/activate
-```
-
-With the activated virtual environment, install the required python dependencies:
-
-```commandline
-pip install -r requirements.txt
-```
-
-Doing so will install Jupyter, which can then be started by running the
-following command:
-
-```commandline
-jupyter lab
+uv run --with jupyter jupyer lab
 ```
 
 Jupyter should automatically launch the JupyterLab interface in a web browser
