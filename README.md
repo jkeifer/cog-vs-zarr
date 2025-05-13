@@ -1,6 +1,6 @@
 # COG vs Zarr
 
-This repo contains a notebook ([./cog_vs_zarr.ipynb](./cog_vs_zarr.ipynb)) used
+This repo contains a notebook ([./notebooks/cog_vs_zarr.ipynb](./notebooks/cog_vs_zarr.ipynb)) used
 to prove out the hypotheses behind the Element 84 blog post <todo> authored by
 @jkeifer and @jsignell.
 
@@ -28,8 +28,7 @@ Once the codespace is fully started, go back into the codespaces dropdown menu
 on the project repo page (you will likely need to refresh the page). You should
 see the codespace listed, and a button with three dots `...` next to it. Click
 that button to open a menu with more actions for the codespace, then select
-"Open in JupyterLab". Select a notebook from the `notebooks` directory and work
-through it.
+"Open in JupyterLab". Select and open a notebook from the `notebooks` directory.
 
 ### Running locally with docker (recommended for local executions)
 
@@ -74,8 +73,7 @@ JupyterLab will be started with no authentication, running on port 8888 (by
 default; use the env var `JUPYTER_PORT` to change it if that port is already
 taken on your machine). Open a web browser and browse to
 [`http://127.0.0.1:8888`](http://127.0.0.1:8888) to open the JupyterLab
-interface. Select a notebook from the `notebooks` directory and work through
-it.
+interface. Select and open a notebook from the `notebooks` directory.
 
 ### Running locally without docker (least recommended approach)
 
@@ -113,5 +111,4 @@ jupyter lab
 ```
 
 Jupyter should automatically launch the JupyterLab interface in a web browser
-with this project loaded. Select a notebook from the `notebooks` directory and
-work through it.
+with this project loaded. Select and open a notebook from the `notebooks` directory.
