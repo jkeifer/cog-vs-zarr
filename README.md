@@ -41,12 +41,13 @@ mind. Windows users will likely need to leverage WSL to access a Linux
 environment to run docker.
 
 
-> [!WARNING]
-
+> [!IMPORTANT]
 > Because of some of the compiled dependencies and their lack of prebuilt
-> binaries for aarch64 Linux, MacOS users with M-series processors will likely
-> not be able to build the docker container. Leverage either of the other two
-> options to run this project.
+> binaries for aarch64 Linux, MacOS users with M-series processors will
+> not be able to run the docker container with the native architecture.
+>
+> The container will run automatically via amd64 arch per the compose.yml,
+> but note that performance will not be as fast as native execution.
 
 
 To begin, clone this repo:

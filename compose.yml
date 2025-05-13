@@ -3,7 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      platforms:
+        - "linux/amd64"
     volumes:
-      - .:/home/jovyan
+      - .:/jupyter
     ports:
       - "${JUPYTER_PORT:-8888}:8888"
