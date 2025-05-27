@@ -1,8 +1,9 @@
 # COG vs Zarr
 
 This repo contains a notebook ([./notebooks/cog_vs_zarr.ipynb](./notebooks/cog_vs_zarr.ipynb)) used
-to prove out the hypotheses behind the Element 84 blog post <todo> authored by
-@jkeifer and @jsignell.
+to prove out the hypotheses behind the Element 84 blog post
+[_Is Zarr the new COG?_](https://element84.com/software-engineering/is-zarr-the-new-cog/)
+authored by @jkeifer and @jsignell.
 
 ## Running the notebook
 
